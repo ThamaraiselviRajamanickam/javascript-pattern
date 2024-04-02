@@ -8,8 +8,8 @@
 var n=5;
 for(var i=1;i<=n;i++){
     var row=""
-    for(var j=1; j<=n;j++){
-        if(j==1 || j==i ){
+    for(var j=1; j<=i;j++){
+        if(j==1 || j==i || i==n){
             row+="*"
         }else{
             row+=" "
