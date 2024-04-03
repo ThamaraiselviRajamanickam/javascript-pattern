@@ -5,15 +5,15 @@
 1 1 2 3
 1 1 2 3 5
  */
-var n=5;
-var row=""
-for(var i=1;i<=n;i++){
-    for(var j=1;j<=i;j++){
-            row+=j
+// var n=5;
+// var row=""
+// for(var i=1;i<=n;i++){
+//     for(var j=1;j<=i;j++){
+//             row+=j
         
-    }
-    row+="\n"
-}console.log(row)
+//     }
+//     row+="\n"
+// }console.log(row)
 // let rows = 5;
 
 // // pattern variable carries the final pattern in string format
@@ -38,3 +38,34 @@ for(var i=1;i<=n;i++){
 //     }
 //     row+="\n"
 // }console.log(row)
+
+
+
+// var n=5;
+// var fibPrev=0;
+// var fibCurr=1;
+// for(i=1;i<=n;i++){
+//     var row=""
+//     for(var j=1;j<=i;j++){
+//         row+= fibCurr + " "
+//     }
+//     var fibNext = fibPrev + fibCurr;
+//     fibPrev = fibCurr;
+//     fibCurr = fibNext;
+//     console.log(row)
+// }
+
+let n = 5;
+let a = 1, b = 1;
+for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+        row += a + " ";
+        let sum = a + b;
+        a = b;
+        b = sum;
+    }
+    a = 1;
+    b = 1;
+    console.log(row);
+}
